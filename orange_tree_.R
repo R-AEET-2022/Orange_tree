@@ -40,6 +40,9 @@ summary(m3) #C=17,39+0,10edad #Este modelo explicaría el 83% de varianza la var
 m4<-lm(circumference~prep, data=Orange)
 summary(m4)#C=96,87+0,05prep
 
+plot(m3)
+
+
 library(parameters)
 parameters(m3)
 

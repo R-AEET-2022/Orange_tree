@@ -30,3 +30,9 @@ Orange$prep<- prep
 
 #vemos nuestro nuevo dataframe
 Orange
+
+#gráfico de nuestros datos
+
+#hacemos lm para ver si la edad (en días)podría explicar la circunferencia del árbol
+m3<-lm(circumference~age, data=Orange)
+summary(m3)

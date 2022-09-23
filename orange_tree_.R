@@ -4,5 +4,5 @@ head(Orange)
 
 #Se mira la base de datos
 View(Orange)
-#Contiene 25 observaciones, una variable respuesta (circumference), una variable
+#Contiene 35 observaciones, una variable respuesta (circumference), una variable
 #predictora que es continua (age) y un factor aleatorio (tree) con siete niveles.

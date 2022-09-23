@@ -35,7 +35,14 @@ Orange
 
 #hacemos lm para ver si la edad (en días)podría explicar la circunferencia del árbol
 m3<-lm(circumference~age, data=Orange)
-summary(m3)
+summary(m3) #C=17,39+0,10edad #Este modelo explicaría el 83% de varianza la variable respuesta
+
+m4<-lm(circumference~prep, data=Orange)
+summary(m4)#C=96,87+0,05prep
+
+library(parameters)
+parameters(m3)
+
 
 #Se hace el plot para ver la relación entre la edad y la circunferencia
 

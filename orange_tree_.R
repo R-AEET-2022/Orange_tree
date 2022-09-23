@@ -36,3 +36,13 @@ Orange
 #hacemos lm para ver si la edad (en días)podría explicar la circunferencia del árbol
 m3<-lm(circumference~age, data=Orange)
 summary(m3)
+
+#Se hace el plot para ver la relación entre la edad y la circunferencia
+
+library(visreg)
+
+visreg(m3)
+
+#Como hay varias medidas por árbol, existe cierta autocorrelación que debería de ser controlada
+#con un modelo mixto metiendo árbol en aleatorio. Sin embargo, solo hay un árbol por sitio, por lo
+#que carecemos de réplicas.

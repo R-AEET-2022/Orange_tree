@@ -44,7 +44,7 @@ library(parameters)
 parameters(m3)
 
 
-#Se hace el plot para ver la relación entre la edad y la circunferencia
+#Se hace el plot para ver la relación entre la edad y la circunferencia###
 
 library(visreg)
 
